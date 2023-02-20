@@ -15,12 +15,7 @@ main {
     background-color: rgb(105, 84, 84);
     border: 10px solid black;
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
-    gap: 2px;
-    padding: 10px;
-
+    padding: 5px;
 }
 
 .display {
@@ -36,12 +31,23 @@ main {
     padding: 10px;
 }
 
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 80px);
+    gap: 2px;
+    margin-top: 4px;
+}
+
 #zero {
     grid-column: span 2;
 }
 
 button {
-    /* border: none; */
     border-radius: 7px;
     font-size: 30px;
+}
+
+button:active {
+    background-color: rgb(27, 27, 34);
 }
