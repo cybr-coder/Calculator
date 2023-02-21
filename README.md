@@ -52,6 +52,7 @@ Users should be able to:
 ### What I learned
 
 - I learnt a whole lot about CSS grid when I was designing the layout of my calculator. 
+- I learnt other DOM manipulation methods I didn't know earlier.
 
 To see how you can add code snippets, see below:
 
