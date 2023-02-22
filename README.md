@@ -67,8 +67,9 @@ To see how you can add code snippets, see below:
 
 - [CSS TRICKS](https://www.css-tricks.com) - This helped me to learn CSS grids for layout. I really liked this pattern and will use it going forward. I'd recommend it to anyone still learning this concept.
 
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. 
+- [Jaybees TechTalk](https://www.youtube.com/@jaybeestechtalk) - This is an amazing YouTube channel which helped me understand a lot of concepts, He did the same curriculum(TOP) and documented everything so when I'm stuck, I just visit his channel.
 
+- []() -
 
 ## Author
 
