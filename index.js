@@ -1,5 +1,6 @@
 const keys = document.querySelector('.calculator-keys')
 const display = document.querySelector('.display')
+const calculator = document.querySelector('.container')
 
 keys.addEventListener('click', e => {
     if (e.target.matches('button')) {
@@ -17,16 +18,10 @@ keys.addEventListener('click', e => {
         if (action === 'decimal') {
             display.textContent += '.';
         }
-        if (
-            action === 'add' ||
-            action === 'subtract' ||
-            action === 'multiply' ||
-            action === 'divide'
-          ) {
-            key.classList.add('')
-        }
+        
     }
 })
+
 
 
 
