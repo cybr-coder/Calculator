@@ -53,6 +53,7 @@ Users should be able to:
 
 - I learnt a whole lot about CSS grid when I was designing the layout of my calculator. 
 - I learnt other DOM manipulation methods I didn't know earlier.
+- I leart the .matches() method and the target property.
 
 To see how you can add code snippets, see below:
 
