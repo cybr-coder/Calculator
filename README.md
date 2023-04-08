@@ -51,6 +51,7 @@ Users should be able to:
 
 ### What I learned
 
+- I learnt the HTML data attribute and it corresponding dataset property in JavaScript in the course of this project
 - I learnt a whole lot about CSS grid when I was designing the layout of my calculator. 
 - I learnt other DOM manipulation methods I didn't know earlier.
 - I leart the .matches() method and the target property.
