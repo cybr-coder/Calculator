@@ -9,6 +9,8 @@ let operator = "";
 const numberButtons = document.querySelectorAll(".number");
 const operators = document.querySelectorAll(".operator");
 
+const equal = document.querySelector(".equal")
+
 numberButtons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         handleNumber(e.target.textContent)
@@ -34,5 +36,16 @@ function handleOperator(sign) {
     previousDisplayNum.textContent = previousNum + " " + sign;
     currentNum = "";
     currentDisplayNum.textContent = "";
+}
 
+equal.addEventListener("click", calculate)
+function calculate() {
+    previousNum = Number(previousNum);
+    currentNum = Number(currentNum);
+
+    if (operator === "+") {
+        previousNum += currentNum;
+    } 
+    previousDisplayNum.textContent = "";
+    currentDisplayNum.textContent = previousNum;
 }
