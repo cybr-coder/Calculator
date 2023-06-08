@@ -45,7 +45,13 @@ function calculate() {
 
     if (operator === "+") {
         previousNum += currentNum;
-    } 
+    } else if (operator === "-") {
+        previousNum -= currentNum;
+    } else if (operator === "x") {
+        previousNum *= currentNum;
+    } else if (operator === "/") {
+        previousNum /= currentNum;
+    }
     previousDisplayNum.textContent = "";
     currentDisplayNum.textContent = previousNum;
 }
