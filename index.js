@@ -1,40 +1,38 @@
-const keys = document.querySelector(".calculator-keys");
-const display = document.querySelector(".display");
-const calculator = document.querySelector(".container");
+const previousDisplayNum = document.querySelector(".previous-number")
+const currentDisplayNum = document.querySelector(".current-number")
 
-keys.addEventListener("click", (e) => {
-  if (e.target.matches("button")) {
-    const key = e.target;
-    const action = key.dataset.action;
-    const keyContent = key.textContent;
-    const displayedNum = display.textContent;
-    if (!action) {
-      if (displayedNum === "0") {
-        display.textContent = keyContent;
-      } else {
-        display.textContent += keyContent;
-      }
-    }
-    if (action === "decimal") {
-      display.textContent += ".";
-    }
-    if (
-      action === "add" ||
-      action === "subtract" ||
-      action === "multiply" ||
-      action === "divide"
-    ) {
-      calculator.dataset.previousKeyType = "operator";
-    }
 
-    const previousKeyType = calculator.dataset.previousKeyType;
-    if (!action) {
-      if (displayedNum === "0" || previousKeyType === "operator") {
-        display.textContent = keyContent;
-      } else {
-        display.textContent = displayedNum + keyContent;
-      }
-    }
-  }
-});
+let previousNum = "";
+let currentNum = "";
+let operator = "";
 
+const numberButtons = document.querySelectorAll(".number");
+const operators = document.querySelectorAll(".operator");
+
+numberButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        handleNumber(e.target.textContent)
+    })
+})
+
+function handleNumber(number) {
+    if (currentNum.length <= 11) {
+        currentNum += number;
+        currentDisplayNum.textContent = currentNum;        
+    } 
+}
+
+operators.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        handleOperator(e.target.textContent)
+    })
+})
+
+function handleOperator(sign) {
+    operator = sign;
+    previousNum = currentNum;
+    previousDisplayNum.textContent = previousNum + " " + sign;
+    currentNum = "";
+    currentDisplayNum.textContent = "";
+
+}
