@@ -51,18 +51,18 @@ Users should be able to:
 
 ### What I learned
 
-- I learnt the HTML data attribute and it corresponding dataset property in JavaScript in the course of this project
-- I learnt a whole lot about CSS grid when I was designing the layout of my calculator. 
-- I learnt other DOM manipulation methods I didn't know earlier.
-- I leart the .matches() method and the target property.
+- HTML Global Attributes
+- CSS Grid layout
+- CSS Variables 
+- Advanced DOM Manipulation 
+- .matches() method and the .target property.
 
 To see how you can add code snippets, see below:
 
 
 ### Continued development
-- Start coding logic with javascript.
 - Improve the look and feel of the project.
-- 
+- Add edge cases to the calculator functionality.
 
 
 ### Useful resources
@@ -75,11 +75,10 @@ To see how you can add code snippets, see below:
 
 ## Author
 
-- Website - [Github](https://www.githum/cybr-coder.com)
+- Github - [Github](https://www.github/cybr-coder.com)
 - Twitter - [@cybr_coder](https://www.twitter.com/cybr_coder)
 
 
 ## Acknowledgments
 First off, I would give all the thanks to God for making everything possible.
-I would like to acknowledge The Odin Project for the great resource it is despite been free and open source. Huge thanks to Jaybees Tech Talk (on YouTube) for all the walkthrough videos as this curriculum is quite challenging.
-
+I would like to acknowledge The Odin Project for the great resource it is despite been free and open source.
